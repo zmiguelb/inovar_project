@@ -1,0 +1,4 @@
+#!/bin/bash
+python3 run_and_save.py
+python3 html_table_to_json.py inovar_agenda.html "Data/Hora" "Evento" "Professor" > agenda_sorted.json
+python3 process_and_email.py
